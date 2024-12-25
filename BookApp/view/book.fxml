@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="10" style="-fx-background-color: #feeef5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.databukuCon">
+    <Label text="DAFTAR BUKU" textAlignment="CENTER" textFill="#861515">
+      <font>
+         <Font name="Berlin Sans FB" size="18.0" />
+      </font></Label>
+    <TableView fx:id="bookTable" prefHeight="400.0" prefWidth="249.0">
+        <columns>
+            <TableColumn fx:id="titleColumn" text="Judul Buku" />
+            <TableColumn fx:id="authorColumn" text="Penulis" />
+            <TableColumn fx:id="synopsisColumn" text="Sinopsis" />
+        </columns>
+    </TableView>
+    <Button onAction="#handleExit" text="Keluar" />
+</VBox>
